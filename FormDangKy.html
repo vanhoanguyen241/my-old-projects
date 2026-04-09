@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Form đăng ký CD24CNTT2</h1>
+    <form style="width:500px; height:700px; border:double #FF0000; margin:auto">
+    <label>Họ và tên</label>
+    <input type="text" placeholder="Hãy nhập vào họ tên" required></input>
+    <br>
+    <label>Mật khẩu</label>
+    <input type="password" required></input>
+    <br>
+    <fieldset>
+        <label>Hãy chọn giới tính:</label>
+        <br>
+        <label>Nam</label>
+        <input type="radio" name="gioitinh"></input>
+        <label>Nữ</label>
+        <input type="radio" name="gioitinh"></input>
+        <br>
+    </fieldset>
+    <fieldset>
+        <label>Hãy chọn sở thích:</label>
+        <br>
+        <input type="checkbox">
+        <label>Bơi lội</label>
+        <br>
+        <input type="checkbox">
+        <label>Cầu lông</label>
+        <br>
+        <input type="checkbox">
+        <label>Bóng bàn</label>
+        <br>
+    </fieldset>
+    <label>Hãy chọn học sinh khoá:</label>
+    <br>
+    <select>
+        <option>Khoá T24</option>
+        <option>Khoá CD24</option>
+        <option>Khoá T25</option>
+        <option>Khoá CD25</option>
+    </select>
+    <br>
+    <label>Lựa chọn môn học</label>
+    <br>
+    <select multiple size="2">
+        <option>Lập trình</option>
+        <option>Quảng trị mạng</option>
+    </select>
+    <br>
+    <label>Trình duyệt</label>
+    <br>
+    <input type="list" list="trinhduyet">
+    <datalist id="trinhduyet">
+        <option>Chrome</option>
+        <option>Cốc cốc</option>
+        <option>Firefox</option>
+        <option>Edge</option>
+    </datalist>
+    <br>
+    <label>Chọn ngày</label>
+    <input type="date">
+    <br>
+    <label>Chọn tháng</label>
+    <input type="month">
+    <br>
+    <label>Tải dữ liệu lên:</label>
+    <input type="file">
+    <br>
+    <label>Ghi chú:</label>
+    <textarea rows="4" cols="50" placeholder="Hãy nhập vào 5 dòng ghi chú ý kiến của bạn"></textarea>
+    <br>
+    <input type="button" value="Nhấp đăng ký"></input>
+    </form>
+</body>
+
+</html>
